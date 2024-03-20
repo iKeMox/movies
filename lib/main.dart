@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:movies_app/layout/layout_view.dart';
 import 'package:movies_app/moduls/splash/page/splash_view.dart';
 
 void main() {
@@ -19,6 +20,7 @@ class MyApp extends StatelessWidget {
       initialRoute: SplashWiew.routeName,
       routes: {
         SplashWiew.routeName: (context) => const SplashWiew(),
+        LayoutView.routeName: (context) => const LayoutView(),
       },
     );
   }

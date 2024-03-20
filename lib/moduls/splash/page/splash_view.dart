@@ -32,7 +32,7 @@ class _SplashWiewState extends State<SplashWiew> {
   Widget build(BuildContext context) {
     Size mediaQuery = MediaQuery.of(context).size;
     return Scaffold(
-      backgroundColor: Colors.transparent,
+      backgroundColor: Color(0xFF121312),
       body: Center(
         child: Image.asset(
           "assets/images/movies.png",
