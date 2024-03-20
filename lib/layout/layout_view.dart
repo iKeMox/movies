@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:movies_app/config/application_theme_manager.dart';
 import 'package:movies_app/moduls/browse/page/browse_view.dart';
 import 'package:movies_app/moduls/home/page/home_view.dart';
 import 'package:movies_app/moduls/search/page/search_view.dart';
