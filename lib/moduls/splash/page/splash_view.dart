@@ -16,7 +16,7 @@ class _SplashWiewState extends State<SplashWiew> {
   @override
   void initState() {
     Timer(
-      Duration(seconds: 2),
+      Duration(seconds: 3),
       () {
         Navigator.pushReplacementNamed(
           context,
@@ -33,13 +33,26 @@ class _SplashWiewState extends State<SplashWiew> {
     Size mediaQuery = MediaQuery.of(context).size;
     return Scaffold(
       backgroundColor: Color(0xFF121312),
-      body: Center(
-        child: Image.asset(
-          "assets/images/movies.png",
-          height: mediaQuery.height / 2,
-          width: mediaQuery.width / 2,
-          fit: BoxFit.fitWidth,
-        ),
+      body: Stack(
+        // mainAxisAlignment: MainAxisAlignment.spaceBetween,
+        // crossAxisAlignment: CrossAxisAlignment.center,
+        children: [
+          Center(
+            child: Image.asset(
+              "assets/images/movies.png",
+              height: mediaQuery.height / 2,
+              width: mediaQuery.width / 2,
+              fit: BoxFit.fitWidth,
+            ),
+          ),
+          Positioned(
+            bottom: -160,
+            left: 100,
+            width: mediaQuery.width / 2,
+            height: mediaQuery.height / 2,
+            child: Image.asset("assets/images/Group 23.png"),
+          )
+        ],
       ),
     );
   }
