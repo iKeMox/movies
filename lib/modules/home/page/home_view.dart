@@ -1,7 +1,5 @@
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
-import 'package:like_button/like_button.dart';
-import 'package:movies_app/modules/home/page/video_play.dart';
 import 'package:movies_app/modules/home/widgets/movie_card.dart';
 import 'package:movies_app/modules/home/widgets/movie_poster.dart';
 
