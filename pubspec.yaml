@@ -14,6 +14,7 @@ dependencies:
 
 
   cupertino_icons: ^1.0.2
+  like_button: ^2.0.5
 
 dev_dependencies:
   flutter_test:
@@ -27,6 +28,9 @@ flutter:
 
   assets:
     - assets/images/
+    - assets/images/Image.png
+    - assets/icons/
+
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware

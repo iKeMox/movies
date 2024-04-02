@@ -46,7 +46,7 @@ class _SplashWiewState extends State<SplashWiew> {
             ),
           ),
           Positioned(
-            bottom: -160,
+            bottom: -150,
             left: 100,
             width: mediaQuery.width / 2,
             height: mediaQuery.height / 2,

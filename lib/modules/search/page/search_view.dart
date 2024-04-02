@@ -28,9 +28,9 @@ class SearchView extends StatelessWidget {
                 decoration: InputDecoration(
                   border: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(25)),
-                  prefixIcon: Icon(Icons.search, color: Colors.white,),
+                  prefixIcon: const Icon(Icons.search, color: Colors.white,),
                   hintText: 'Search',
-                  hintStyle: TextStyle(
+                  hintStyle: const TextStyle(
                     color: Colors.grey,
                     height: 1,
 

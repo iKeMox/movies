@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:movies_app/moduls/browse/page/browse_view.dart';
-import 'package:movies_app/moduls/home/page/home_view.dart';
-import 'package:movies_app/moduls/search/page/search_view.dart';
-import 'package:movies_app/moduls/watchlist/page/watchlist_view.dart';
+import 'package:movies_app/modules/browse/page/browse_view.dart';
+import 'package:movies_app/modules/home/page/home_view.dart';
+import 'package:movies_app/modules/search/page/search_view.dart';
+import 'package:movies_app/modules/watchlist/page/watchlist_view.dart';
 
 class LayoutView extends StatefulWidget {
   static const String routeName = "layout";
@@ -16,7 +16,7 @@ class LayoutView extends StatefulWidget {
 class _LayoutViewState extends State<LayoutView> {
   int currentIndex = 0;
   List<Widget> screens = [
-    HomeView(),
+    Home(),
     SearchView(),
     BrowseView(),
     WatchListView(),
