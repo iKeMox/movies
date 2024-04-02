@@ -1,7 +1,9 @@
+import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
 import 'package:like_button/like_button.dart';
 import 'package:movies_app/modules/home/page/video_play.dart';
 import 'package:movies_app/modules/home/widgets/movie_card.dart';
+import 'package:movies_app/modules/home/widgets/movie_poster.dart';
 
 
 class Home extends StatelessWidget {
@@ -14,77 +16,20 @@ class Home extends StatelessWidget {
       body: SingleChildScrollView(
         child: Column(
           children: [
-            Stack(
-              clipBehavior: Clip.none,
-              alignment: Alignment(0,2),
-              children: [
-                Container(
-                  width: 412,
-                  height: 217,
-                  margin: EdgeInsets.only(top: 30),
-                  decoration: BoxDecoration(
-                    image: DecorationImage(
-                      image: AssetImage("assets/images/Image.png"),
-                      fit: BoxFit.cover,
-                    ),
-                  ),
-                  child: Column(
-                    children: [
-                      SizedBox(height: 80),
-                      IconButton(onPressed: (){
-                        Navigator.push(context,
-                          MaterialPageRoute(builder: (context) => VideoPlay(),),);
-                      },
-                        icon: Icon(
-                          Icons.play_circle_fill,
-                          color: Colors.white,
-                          size: 60,
-                        ),)
-                    ],
-                  ),
-                ),
-                Positioned(
-                  left: 20,
-                  top: 125,
-                  child: Stack(
-                    children: [
-                      Container(
-                        child: Image.asset("assets/images/Image.png", width: 109, height: 199, fit: BoxFit.cover,),
-                      ),
+            CarouselSlider(
 
-                      LikeButton(
-                        likeBuilder: (isLiked) {
-                          if (isLiked) {
-                            return Image.asset("assets/icons/bookmark_saved.png");
-                          }
-                          if (!isLiked) {
-                            return Image.asset("assets/icons/bookmark.png");
-                          }
-                        },
-                      ),
-                    ],
-                  ),
-                ),
+              items: [
+                MoviePoster(),
+                MoviePoster(),
 
-                Padding(
-                  padding: const EdgeInsets.only(top: 100,left:120),
-                  child: Column(
-                    children: [
-                      Text("Dora and the Lost city of gold",style: TextStyle(fontSize: 14,color: Colors.white),),
-                      const SizedBox(height: 5,),
-                      Row(
-                        children: [
-                          SizedBox(width: 25,),
-                          Text("2019  PG-13  2h 7m",style: TextStyle(fontSize: 10,color: Color(0xFFB5B4B4)),),
-                        ],
-                      ),
-                    ],
-                  ),
-                ),
-              ],
+              ], options: CarouselOptions(height: 300,
+              viewportFraction: 1,
+              autoPlay: true,
             ),
+            ),
+            
 
-            SizedBox(height: 100,),
+            SizedBox(height: 20,),
 
             Container(
               padding: EdgeInsets.symmetric(vertical: 5),
