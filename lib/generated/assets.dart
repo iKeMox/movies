@@ -11,9 +11,10 @@ class Assets {
   static const String iconsBookmark = 'assets/icons/bookmark.png';
   static const String iconsBookmarkSaved = 'assets/icons/bookmark_saved.png';
   static const String imagesBrowes = 'assets/images/browes.png';
-  static const String imagesGroup = 'assets/images/Group 23.png';
+  static const String imagesGroup 23 = 'assets/images/Group 23.png';
   static const String imagesHome = 'assets/images/home.png';
   static const String imagesIconMaterialLocalMovies = 'assets/images/Icon_material-local-movies.png';
+  static const String imagesImage = 'assets/images/Image.png';
   static const String imagesMovies = 'assets/images/movies.png';
   static const String imagesSearch = 'assets/images/search.png';
   static const String imagesWatchlist = 'assets/images/watchlist.png';

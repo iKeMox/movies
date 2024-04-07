@@ -30,7 +30,7 @@ flutter:
   assets:
     - assets/images/
     - assets/Category/
-    - assets/images/icons/
+#    - assets/images/icons/
     - assets/icons/
 
 
