@@ -2,9 +2,18 @@
 class Assets {
   Assets._();
 
+  static const String categoryAction = 'assets/Category/Action.jpeg';
+  static const String categoryComedy = 'assets/Category/Comedy.jpeg';
+  static const String categoryDocumentary = 'assets/Category/Documentary.jpeg';
+  static const String categoryDrama = 'assets/Category/Drama.jpg';
+  static const String categoryFantasy = 'assets/Category/Fantasy.jpeg';
+  static const String categoryHorror = 'assets/Category/Horror.jpeg';
+  static const String iconsBookmark = 'assets/icons/bookmark.png';
+  static const String iconsBookmarkSaved = 'assets/icons/bookmark_saved.png';
   static const String imagesBrowes = 'assets/images/browes.png';
-  static const String imagesGroup  = 'assets/images/Group 23.png';
+  static const String imagesGroup = 'assets/images/Group 23.png';
   static const String imagesHome = 'assets/images/home.png';
+  static const String imagesIconMaterialLocalMovies = 'assets/images/Icon_material-local-movies.png';
   static const String imagesMovies = 'assets/images/movies.png';
   static const String imagesSearch = 'assets/images/search.png';
   static const String imagesWatchlist = 'assets/images/watchlist.png';

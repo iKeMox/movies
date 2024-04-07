@@ -16,8 +16,8 @@ class _SplashWiewState extends State<SplashWiew> {
   @override
   void initState() {
     Timer(
-      Duration(seconds: 3),
-      () {
+      Duration(seconds: 2),
+          () {
         Navigator.pushReplacementNamed(
           context,
           LayoutView.routeName,
@@ -32,7 +32,7 @@ class _SplashWiewState extends State<SplashWiew> {
   Widget build(BuildContext context) {
     Size mediaQuery = MediaQuery.of(context).size;
     return Scaffold(
-      backgroundColor: Color(0xFF121312),
+      backgroundColor: const Color(0xFF121312),
       body: Stack(
         // mainAxisAlignment: MainAxisAlignment.spaceBetween,
         // crossAxisAlignment: CrossAxisAlignment.center,
@@ -46,7 +46,7 @@ class _SplashWiewState extends State<SplashWiew> {
             ),
           ),
           Positioned(
-            bottom: -160,
+            bottom: -150,
             left: 100,
             width: mediaQuery.width / 2,
             height: mediaQuery.height / 2,
